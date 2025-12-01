@@ -32,7 +32,7 @@ const sponsors = [
             "15 W Washington St.",
         ],
         "cityState": "Chicago, IL",
-        "logo": "/dope.jpg",
+        "logo": "/dopedrip.jpg",
         "bg": "rounded-full",
         "tier": "Silver",
         "socials": [
