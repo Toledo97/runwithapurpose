@@ -55,7 +55,7 @@ function RaceFrame(opt: boolean, item: Race) {
 
   return (
     <div className='flex flex-row text-stone-800 items-start p-4 gap-2 shadow' >
-      <div className='flex w-1/3 justify-center'>
+      <div className='flex w-36 justify-center'>
         <Image
           className={`rounded-4xl`}
           src={`/races${item.imageData.src}`}
