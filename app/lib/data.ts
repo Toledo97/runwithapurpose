@@ -4,6 +4,8 @@ import {
 import { SportsScore } from '@mui/icons-material';
 import { BiDonateHeart } from "react-icons/bi";
 import { LiaDonateSolid } from "react-icons/lia";
+import { Race } from './types';
+
 
 const links = [
     { name: 'Home', href: '/', textcolor: "white", icon: HomeIcon },
@@ -98,92 +100,97 @@ const sponsors = [
 
 ]
 
-const races =
-    [
-        {
+const futureRaces: Race[] = [
+    {
             name: "Chicago Marathon",
             date: "08-11-2026",
-            imageData: { alt: "Bank of America Chicago Marathon", src: "/chimarathon.png", w: 70, h: 50},
+            imageData: { alt: "Bank of America Chicago Marathon", src: "/chimarathon.png", w: 70, h: 50 },
             distance: "26.2 mi",
-            time: {hours: 0, minutes: 0, seconds: 0}
+            time: { hours: 0, minutes: 0, seconds: 0 }
         }, {
             name: "Chicago 13.1",
             date: "06-07-2026",
-            imageData: { alt: "Bank of America Chicago 13.1 - Half Marathon", src: "/chi13.png", w: 70, h: 0},
+            imageData: { alt: "Bank of America Chicago 13.1 - Half Marathon", src: "/chi13.png", w: 70, h: 0 },
             distance: "13.1 mi",
-            time: {hours: 0, minutes: 0, seconds: 0}
-        },{
+            time: { hours: 0, minutes: 0, seconds: 0 }
+        }, {
             name: "Shamrock Shuffle",
             date: "03-22-2026",
-            imageData: { alt: "Shamrock Shuffle", src: "/shamrock.png", w: 135, h: 100},
+            imageData: { alt: "Shamrock Shuffle", src: "/shamrock.png", w: 135, h: 100 },
             distance: "8k",
-            time: {hours: 0, minutes: 0, seconds: 0}
-        },{
+            time: { hours: 0, minutes: 0, seconds: 0 }
+        }, {
 
             name: "New Years Eve 5k",
             date: "12-31-2025",
             imageData: { alt: "New Years Eve 5k", src: "/nye5k.avif", w: 100, h: 90 },
             distance: "5 km",
-            time: {hours: 0, minutes: 0, seconds: 0}
-        }, {
+            time: { hours: 0, minutes: 0, seconds: 0 }
+        },
+]
+
+const pastRaces: Race[] =
+    [
+         {
 
             name: "Chi Town Turkey Trot",
             date: "11-27-2025",
             imageData: { alt: "Stan's Donuts 5k", src: "/turkey25.png", w: 120, h: 90 },
             distance: "10 km",
-            time: {hours: 0, minutes: 58, seconds: 37}
+            time: { hours: 0, minutes: 58, seconds: 37 }
         }, {
 
             name: "Coquito Dash",
             date: "11-22-2025",
             imageData: { alt: "Coquito Dash", src: "/coquito.png", w: 100, h: 100 },
             distance: "5 km",
-            time: {hours: 0, minutes: 28, seconds: 33}
+            time: { hours: 0, minutes: 28, seconds: 33 }
         }, {
 
             name: "Hot Chocolate Run",
             date: "11-02-2025",
             imageData: { alt: "Hot Chocolate Run", src: "/hotcho.webp", w: 100, h: 100 },
             distance: "5 km",
-            time: {hours: 0, minutes: 31, seconds: 52}
+            time: { hours: 0, minutes: 31, seconds: 52 }
         }, {
 
             name: "El Trote De Las Calacas",
             date: "10-18-2025",
             imageData: { alt: "El Trote De Las Calacas", src: "/trote.png", w: 128, h: 128 },
             distance: "5 km",
-            time: {hours: 0, minutes: 41, seconds: 50}
+            time: { hours: 0, minutes: 41, seconds: 50 }
         }, {
 
             name: "Race to Wrigley",
             date: "09-21-2025",
             imageData: { alt: "Race to Wrigley", src: "/wrigley.png", w: 100, h: 100 },
             distance: "5 km",
-            time: {hours: 0, minutes: 35, seconds: 15}
+            time: { hours: 0, minutes: 35, seconds: 15 }
         }, {
 
             name: "El Grito 5k",
             date: "09-14-2025",
             imageData: { alt: "El Grito 5k", src: "/grito.png", w: 100, h: 100 },
             distance: "5 km",
-            time: {hours: 0, minutes: 38, seconds: 11}
+            time: { hours: 0, minutes: 38, seconds: 11 }
         }, {
 
             name: "Stan's Donuts",
             date: "07-28-2025",
             imageData: { alt: "Stan's Donuts 5k", src: "/DonutRunLogo.png", w: 145, h: 118 },
             distance: "5 km",
-            time: {hours: 0, minutes: 37, seconds: 18}
+            time: { hours: 0, minutes: 37, seconds: 18 }
         }, {
 
             name: "San Juan Run",
             date: "06-29-2025",
             imageData: { alt: "San Juan Run", src: "/sanjuanrun.png", w: 100, h: 130 },
             distance: "5 km",
-            time: {hours: 0, minutes: 41, seconds: 15}
+            time: { hours: 0, minutes: 41, seconds: 15 }
 
         },
 
-]
+    ]
 
-export { links, races, sponsors };
+
+export { links, sponsors, pastRaces, futureRaces };
