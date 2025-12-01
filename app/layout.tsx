@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Carlos' Running",
+  title: "Run with a Purpose",
   description: "Running brought to you by local businesses in Chicago & more!",
 };
 import SideNav from '@/app/components/navbar';

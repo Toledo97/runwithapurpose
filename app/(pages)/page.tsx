@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full flex-col items-center p-4 sm:items-start gap-4">
         <div className="flex flex-col items-center gap-4 w-full">
           <div className="text-4xl text-stone-800 font-bold text-shadow-lg">
-            Running with a Purpose
+            Run with a Purpose
           </div>
 
           <div className="border-t-2 border-stone-700 w-full"></div>

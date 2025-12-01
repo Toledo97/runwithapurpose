@@ -17,7 +17,7 @@ export default function SideNav() {
                 <div className="flex flex-row gap-2 items-center">
                     <DirectionsRun fontSize={'large'} />
                     <div className=''>
-                        Running with a Purpose
+                        Run with a Purpose
                     </div>
                 </div>
             </Link>
