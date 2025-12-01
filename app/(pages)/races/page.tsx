@@ -2,6 +2,7 @@
 import { Race } from '@/app/lib/types';
 import { races } from '@/app/lib/data';
 import Image from "next/image";
+import { Suspense } from 'react';
 
 
 
@@ -21,13 +22,16 @@ export default function RacesPage() {
           </div>
           <div className="border-t-2 border-stone-700 w-full"></div>
           <div className='flex flex-col gap-4 w-full'>
-            {futureRaces.map((item, idx) => {
-              return (
-                <div key={item.name}>
-                  {RaceFrame(false, item)}
-                </div>
-              );
-            })}
+            <Suspense>
+
+              {futureRaces.map((item, idx) => {
+                return (
+                  <div key={item.name}>
+                    {RaceFrame(false, item)}
+                  </div>
+                );
+              })}
+            </Suspense>
           </div>
 
           <div className="justify-center text-4xl text-stone-800 font-bold text-shadow-lg">
@@ -36,13 +40,17 @@ export default function RacesPage() {
 
           <div className="border-t-2 border-stone-700 w-full"></div>
           <div className='flex flex-col gap-4 w-full'>
-            {pastRaces.map((item, idx) => {
-              return (
-                <div key={item.name}>
-                  {RaceFrame(true, item)}
-                </div>
-              );
-            })}
+            <Suspense>
+
+              {pastRaces.map((item, idx) => {
+                return (
+                  <div key={item.name}>
+                    {RaceFrame(true, item)}
+                  </div>
+                );
+              })}
+            </Suspense>
+
           </div>
         </div>
       </main>
@@ -55,7 +63,7 @@ function RaceFrame(opt: boolean, item: Race) {
 
   return (
     <div className='flex flex-row text-stone-800 items-start p-4 gap-2 shadow' >
-      <div className='flex w-36 justify-center'>
+      <div className='flex w-40 justify-center'>
         <Image
           className={`rounded-4xl`}
           src={`/races${item.imageData.src}`}
